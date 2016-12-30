@@ -1,0 +1,32 @@
+<layout>
+
+    <data>
+
+        <import type="android.support.v7.widget.RecyclerView.LayoutManager"/>
+
+        <import type="android.support.v7.widget.RecyclerView.Adapter"/>
+
+        <variable
+                name="adapter"
+                type="Adapter"/>
+
+        <variable
+                name="manager"
+                type="LayoutManager"/>
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:tools="http://schemas.android.com/tools"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorBackground"
+                 tools:context="io.tcl.hgl.awesomeandroid.mvp.view.TagFragment">
+
+        <android.support.v7.widget.RecyclerView
+                android:adapter="@{adapter}"
+                android:layoutManager="@{manager}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </FrameLayout>
+</layout>

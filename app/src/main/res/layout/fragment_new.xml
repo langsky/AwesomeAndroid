@@ -1,0 +1,32 @@
+<layout>
+
+    <data>
+
+        <import type="io.tcl.hgl.awesomeandroid.adapter.NewAdapter"/>
+
+        <import type="android.support.v7.widget.RecyclerView.LayoutManager"/>
+
+        <variable
+                name="adapter"
+                type="NewAdapter"/>
+
+        <variable
+                name="layoutManager"
+                type="LayoutManager"/>
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:tools="http://schemas.android.com/tools"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorBackground"
+                 tools:context="io.tcl.hgl.awesomeandroid.mvp.view.NewFragment">
+
+        <android.support.v7.widget.RecyclerView
+                android:adapter="@{adapter}"
+                android:layoutManager="@{layoutManager}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </FrameLayout>
+</layout>
